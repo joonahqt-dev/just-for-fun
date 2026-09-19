@@ -1,11 +1,12 @@
-import { Button } from "@/components/ui/button"
+import { SmokeyBackground, LoginForm } from "@/components/ui/login-form";
 
-function App() {
+export default function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center">
-      <Button>Click me — shadcn works! 🎉</Button>
-    </div>
-  )
+    <main className="relative w-screen h-screen bg-gray-900">
+      <SmokeyBackground className="absolute inset-0" />
+      <div className="relative z-10 flex items-center justify-center w-full h-full p-4">
+        <LoginForm />
+      </div>
+    </main>
+  );
 }
-
-export default App
